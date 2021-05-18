@@ -2,6 +2,7 @@ package by.zhenekns.development.controller;
 
 import by.zhenekns.development.model.User;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -24,11 +25,31 @@ public class MainController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher(page_url).forward(req,resp);
+        req.setAttribute("users", users);
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher(page_url);
+        requestDispatcher.forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        req.setCharacterEncoding("UTF-8");
+        if (!isValidData(req)) {
+            doGet(req, resp);
+        }
+        String name = req.getParameter("name");
+        String age = req.getParameter("age");
+
+        User user = new User(name, Integer.parseInt(age));
+        users.add(user);
+        doGet(req, resp);
+    }
+
+    private boolean isValidData(HttpServletRequest request) {
+        String name = request.getParameter("name");
+        String age = request.getParameter("age");
+
+        return name != null && name.length() > 0 &&
+                age != null && age.length() > 0 &&
+                age.matches("[+]?\\d+");
     }
 }

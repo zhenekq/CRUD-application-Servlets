@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%--
   Created by IntelliJ IDEA.
   User: user
@@ -11,6 +12,22 @@
     <title>Title</title>
 </head>
 <body>
-<div>Hello, world!</div>
+<h1>CRUD APPLICATION</h1>
+<h2>Current users: </h2>
+<c:forEach var="user" items="${requestScope.users}">
+    <ul>
+        <li>Name: <c:out value="${user.name}"/></li>
+
+        <li>Age: <c:out value="${user.age}"/></li>
+    </ul>
+    <hr/>
+
+</c:forEach>
+<h2>Add new user</h2>
+<form method="post">
+    <input type="text" name="name" placeholder="Enter your username"><br><br>
+    <input type="number" name="age" placeholder="Enter your age"><br><br>
+    <input type="submit" value="Submit" name="submit"><br>
+</form>
 </body>
 </html>
