@@ -7,16 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cb90f8e-8bbe-4b37-9804-80da682f324e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/controller/AddUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/controller/ContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/controller/GetIndexPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/controller/UpdateUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/zhenekns/development/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/zhenekns/development/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/development/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/zhenekns/development/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/zhenekns/development/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/zhenekns/development/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/classes/by/zhenekns/development/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/classes/by/zhenekns/development/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/view/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/view/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/classes/by/zhenekns/development/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/classes/by/zhenekns/development/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/classes/by/zhenekns/development/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/view/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/crud-app-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -36,7 +46,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/main.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -58,6 +68,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../colibri" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,14 +91,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.66">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.zhenekns.development.model.Main" />
+      <module name="CRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.zhenekns.development.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.66" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.66" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="CRUD:war">
           <settings>
-            <option name="CONTEXT_PATH" value="" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -154,6 +178,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.66" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -165,7 +198,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621373770163</updated>
-      <workItem from="1621373774477" duration="2959000" />
+      <workItem from="1621373774477" duration="11680000" />
     </task>
     <servers />
   </component>
